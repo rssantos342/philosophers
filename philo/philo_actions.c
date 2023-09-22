@@ -6,7 +6,7 @@
 /*   By: ride-sou <ride-sou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 10:53:19 by ride-sou          #+#    #+#             */
-/*   Updated: 2023/09/21 16:39:03 by ride-sou         ###   ########.fr       */
+/*   Updated: 2023/09/22 13:12:21 by ride-sou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ void	*start_dinner(void *philo)
 	{
 		if (philo_copy->data_s->nbr_philos == 1)
 		{
-			pthread_mutex_lock(philo_copy->right_fork);
 			print_str(philo, YELLOW"has taken a fork"RESET);
-			pthread_mutex_unlock(philo_copy->right_fork);
 			return (NULL);
 		}
 		if (philo_copy->id % 2 == 0)

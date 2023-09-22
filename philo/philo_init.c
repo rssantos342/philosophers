@@ -6,7 +6,7 @@
 /*   By: ride-sou <ride-sou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 17:24:06 by ride-sou          #+#    #+#             */
-/*   Updated: 2023/09/22 12:33:02 by ride-sou         ###   ########.fr       */
+/*   Updated: 2023/09/22 18:05:12 by ride-sou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,6 @@ void	routine(t_data *data)
 	{
 		pthread_create(&data->philo_s[i].philo, NULL,
 			&start_dinner, &data->philo_s[i]);
-		usleep(1000);
 		i++;
 	}
 	pthread_create(&data->main_thread, NULL, &philo_rules, data);
