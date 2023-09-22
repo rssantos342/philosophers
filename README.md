@@ -1,3 +1,3 @@
 # philosophers
 
-ONGOING PROJECT
+sucess 100/100
